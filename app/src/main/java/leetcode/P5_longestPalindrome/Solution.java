@@ -1,4 +1,4 @@
-package leetcode.L5_longestPalindrome;
+package leetcode.P5_longestPalindrome;
 
 public class Solution {
   public String longestPalindrome(String s) {
