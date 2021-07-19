@@ -1,9 +1,11 @@
 package leetcode.P6_ZigZagConversion;
 
+import java.util.Arrays;
+
 class Solution {
   public String convert(String s, int numRows) {
-    if (false == isValidate(s, numRows)) {
-      return s == null ? new String() : s;
+    if (!isValidate(s, numRows)) {
+      return s == null ? "" : s;
     }
 
     if (numRows == 1) {
@@ -20,9 +22,7 @@ class Solution {
 
     // initialize array
     String[] strArr = new String[numRows];
-    for (int i = 0; i < strArr.length; i++) {
-      strArr[i] = "";
-    }
+    Arrays.fill(strArr, "");
 
     int row = 0;
     boolean updown = true; // up:true, down:false
@@ -58,10 +58,7 @@ class Solution {
     }
 
     int strLength = s.length();
-    if (strLength == 1) {
-      return false;
-    }
-    if (strLength < 1 || strLength > 1000) {
+    if (strLength <= 1 || strLength > 1000) {
       return false;
     }
     if (numRows < 1 || numRows > 1000) {

@@ -1,4 +1,4 @@
-package leetcode.P3_lengthOfLongestSubstring;
+package leetcode.P3_LengthOfLongestSubstring;
 
 import java.util.HashSet;
 
