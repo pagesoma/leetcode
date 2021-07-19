@@ -1,6 +1,6 @@
 package leetcode.P5_longestPalindrome;
 
-public class Solution {
+class Solution {
   public String longestPalindrome(String s) {
     if (s == null || s.isEmpty()) return "";
     if (s.length() == 1) return s;

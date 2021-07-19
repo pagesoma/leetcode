@@ -2,7 +2,7 @@ package leetcode.P3_lengthOfLongestSubstring;
 
 import java.util.HashSet;
 
-public class Solution {
+class Solution {
   public int lengthOfLongestSubstring(String s) {
     if (s == null || s.isEmpty()) {
       return 0;
